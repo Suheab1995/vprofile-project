@@ -1,2 +1,2 @@
 FROM tomcat:latest
-COPY staging/vprofile.war /usr/local/tomcat/webapps
+COPY staging/vprofile-v2.war /usr/local/tomcat/webapps
