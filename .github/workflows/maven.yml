@@ -33,7 +33,3 @@ jobs:
         mkdir staging && cp target/*.war staging
         cd staging
         ls -ltr
-    - name: Build the Docker image
-      run: |
-        ls -ltr
-        docker build . --file Dockerfile --tag ${{secrets.DOCKERHUB_USERNAME}}/demo_123:${{ github.run_id }}  
