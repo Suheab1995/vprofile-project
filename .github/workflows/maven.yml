@@ -46,5 +46,5 @@ jobs:
           password: Asma@786B
     - name: Push docker image
       run: |
-        docker push suheab/sample:v1
+        docker push suheab/sample:latest
           
