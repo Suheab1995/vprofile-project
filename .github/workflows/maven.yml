@@ -33,3 +33,7 @@ jobs:
         mkdir staging && cp target/*.war staging
         cd staging
         ls -ltr
+    - name: Build Docker Image
+      run: |
+        docker build -t sample-img .
+        docker images
